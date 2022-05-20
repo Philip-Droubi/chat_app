@@ -11,3 +11,14 @@ follow this:
 - Run ```php artisan websocket:serv```
 - In browser copy paste this link ```http://127.0.0.1:8000/laravel-websockets```
 - Click on ```Connect``` blue button
+
+## To test on postman 
+- creat a new ```POST``` request
+- Put this link ```http://127.0.0.1:8000/api/sendmessage```
+- In request Headers put key: ```Accept``` and its value should be ```application/json```
+- In request Body put those Keys and Values : 
+- - ```user_id```  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;     ```5``` &nbsp; &nbsp;&nbsp; &nbsp;(or any integer)
+- - ```message_id```  &nbsp; &nbsp;&nbsp;   ```1```&nbsp; &nbsp;&nbsp; &nbsp; (or any integer)
+- - ```message```  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;     ```message content```
+- Click on ```Send``` button or ```ctrl + Enter```
+- The response should look like an empty array ```[]``` and status code should be 200
